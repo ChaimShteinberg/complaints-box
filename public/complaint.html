@@ -12,19 +12,17 @@
     </header>
     <form method="post" action="http://localhost:3211/complaint/submit">
       <fieldset>
-        <label
-          >category
-          <select name="category" id="category" required>
-            <option value=""></option>
-            <option value="אוכל">אוכל</option>
-            <option value="ציוד">ציוד</option>
-            <option value="פקודות">פקודות</option>
-            <option value="אחר">אחר</option>
-          </select>
-        </label>
-        <label>message
-            <textarea name="message" id="message" rows="5"></textarea>
-        </label>
+        <legend>Complaint Details</legend>
+        <label for="category">category</label>
+        <select name="category" id="category" required>
+          <option value="">Please choose</option>
+          <option value="Food">Food</option>
+          <option value="Equipment">Equipment</option>
+          <option value="Orders">Orders</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="message">message</label>
+        <textarea name="message" id="message" rows="10"></textarea>
         <button type="submit">submit</button>
       </fieldset>
     </form>
