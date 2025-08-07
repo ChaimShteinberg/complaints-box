@@ -5,5 +5,7 @@
 ```
 
 complaints-box/
-│
+├── db/
+│   └──connect.db.js
+├── app.js
 └── READMME.md
