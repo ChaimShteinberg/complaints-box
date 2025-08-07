@@ -11,6 +11,8 @@ complaints-box/
 │   └──complaint.model.js
 ├── routes/
 │   └──complaint.route.js
+├── controllers/
+│   └──complaint.controller.js
 ├── app.js
 └── READMME.md
 
