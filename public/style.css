@@ -1,0 +1,38 @@
+* {
+  font-family: Georgia;
+  background: rgb(241, 241, 241);
+  text-align: center;
+}
+header {
+  border-top: 5px solid gray;
+  border-bottom: 5px solid gray;
+}
+h1 {
+  font-size: 40px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 15px;
+  display: inline-block;
+}
+header p {
+  font-size: 20px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+section {
+  margin: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+button {
+  font-size: 20px;
+  background: rgb(199, 199, 199);
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid gray;
+  display: inline-block;
+}
