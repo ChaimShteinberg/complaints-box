@@ -8,7 +8,7 @@ complaints-box/
 ├── db/
 │   └──connect.db.js
 ├── models/
-│   └──complaint.js
+│   └──complaint.model.js
 ├── app.js
 └── READMME.md
 
