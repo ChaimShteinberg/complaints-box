@@ -1,0 +1,25 @@
+{
+  "name": "complaints-box",
+  "version": "1.0.0",
+  "description": "## מבנה תקיות",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaimShteinberg/complaints-box.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaimShteinberg/complaints-box/issues"
+  },
+  "homepage": "https://github.com/ChaimShteinberg/complaints-box#readme",
+  "dependencies": {
+    "mongodb": "^6.18.0"
+  }
+}
