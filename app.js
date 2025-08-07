@@ -6,7 +6,7 @@ const app = express();
 
 await connectToMongo();
 
-app.use(express.json());
+app.use(express.urlencoded());
 
 app.use("/complaint", complaintRouter);
 
