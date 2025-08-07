@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Submit Complaint</title>
+  </head>
+  <body>
+    <header>
+      <h1>Submit Complaint</h1>
+    </header>
+    <form method="post" action="http://localhost:3211/complaint/submit">
+      <fieldset>
+        <label
+          >category
+          <select name="category" id="category" required>
+            <option value=""></option>
+            <option value="אוכל">אוכל</option>
+            <option value="ציוד">ציוד</option>
+            <option value="פקודות">פקודות</option>
+            <option value="אחר">אחר</option>
+          </select>
+        </label>
+        <label>message
+            <textarea name="message" id="message" rows="5"></textarea>
+        </label>
+        <button type="submit">submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
