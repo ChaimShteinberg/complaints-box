@@ -1,11 +1,15 @@
 # complaints-box
 
-## מבנה תקיות 
+## מבנה תקיות
 
 ```
 
 complaints-box/
 ├── db/
 │   └──connect.db.js
+├── models/
+│   └──complaint.model.js
 ├── app.js
 └── READMME.md
+
+```
