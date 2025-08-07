@@ -1,8 +1,13 @@
 import express from "express";
-import db, { connectToMongo } from "./db/connect.db.js";
+import { connectToMongo } from "./db/connect.db.js";
+import complaintRouter from "./routes/complaint.route.js";
 
 const app = express();
 
 await connectToMongo();
+
+app.use(express.json());
+
+app.use("/complaint", complaintRouter);
 
 app.listen(process.env.PORT, console.log("listennung..."));
