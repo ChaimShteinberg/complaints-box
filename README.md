@@ -37,13 +37,12 @@ All API routes are grouped under `/complaint`.
 | `POST` | `/complaint/submit`  | Submit a new complaint (form or JSON)      |
 | `GET`  | `/complaint/getAll`  | Retrieve all existing complaints from the database |
 
-### Body של הבקשה (`POST /complaint/submit`)
-
-ניתן לשלוח מידע דרך טופס HTML או כ־JSON (אם תתווסף תמיכה בעתיד). בפורמט הבא:
+Request Body (POST /complaint/submit)  
+Data can be sent via an HTML form or as JSON (if support is added in the future) in the following format:
 
 ```json
 {
   "category": "Food",
-  "message": "האוכל לא היה טרי"
+  "message": "The food was not fresh"
 }
 ```
