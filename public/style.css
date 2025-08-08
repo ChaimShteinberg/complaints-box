@@ -62,12 +62,19 @@ textarea {
   margin: auto;
   border-radius: 10px;
 }
+.password{
+  font-weight: 100;
+}
+#password{
+  padding: 5px;
+  border-radius: 5px;
+}
 button {
   font-size: 20px;
   background: rgb(220, 220, 220);
   border-radius: 10px;
   padding: 15px;
   border: 1px solid gray;
-  margin: 20px;
-  display: inline-block;
+  margin: 20px auto;
+  display: block;
 }
