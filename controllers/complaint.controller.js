@@ -1,11 +1,13 @@
 import db from "../db/connect.db.js";
+import Complaint from "../models/complaint.model.js";
 
 const collection = db.collection("complaints");
 
 export async function submitComplaint(req, res) {
   try {
     const { category, message } = req.body;
-    await collection.insertOne({ category, message });
+    const complaint = new Complaint(category, message)
+    await collection.insertOne(complaint);
     res.send("The form was submitted successfully.");
   } catch (error) {
     res.status(error.status | 400).send(error.message);
