@@ -6,7 +6,11 @@ const app = express();
 
 await connectToMongo();
 
-app.use(express.urlencoded());
+app.use(express.static('public'))
+
+app.use(express.urlencoded({ extended: true }));
+
+app.use(express.json())
 
 app.use("/complaint", complaintRouter);
 
