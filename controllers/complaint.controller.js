@@ -12,6 +12,15 @@ export async function submitComplaint(req, res) {
   }
 }
 
+export function auth(req, res, next){
+  const {password} = req.body
+  if (password === process.env.PASSWORD){
+    next()
+  }else{
+    res.send("סיסמה לא נכונה")
+  }
+}
+
 export async function getAllComplaints(req, res) {
   try {
     const complaints = await collection.find().toArray();
