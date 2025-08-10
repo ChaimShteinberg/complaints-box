@@ -6,6 +6,11 @@ const app = express();
 
 await connectToMongo();
 
+app.use((req, res, next) => {
+  console.log(`Request received: ${req.method} ${req.url}`);
+  next();
+});
+
 app.use(express.static('public'))
 
 app.use(express.urlencoded({ extended: true }));
